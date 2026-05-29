@@ -1,0 +1,33 @@
+# Dados brutos (muito grandes, >100MB)
+Sistema - TCC/dados/dados_nao_processados/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Ambiente virtual
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Streamlit
+.streamlit/
