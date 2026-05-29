@@ -31,3 +31,7 @@ Desktop.ini
 
 # Streamlit
 .streamlit/
+
+# Videos extras (mantidos apenas localmente)
+videos/apresentacao_streamlit1.mp4
+videos/apresentacao_streamlit_bruto.mp4
