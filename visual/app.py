@@ -346,15 +346,27 @@ def plot_zero_day_matrizes_confusao(df):
     return fig
 
 st.title("🛡️ Detecção de Ataques Cibernéticos em Tráfego de Rede")
-st.markdown("""
-**Aplicação de algoritmos de Machine Learning para detecção de ataques cibernéticos em tráfego de rede**
 
-Este dashboard apresenta os resultados da comparação entre **4 algoritmos** aplicados sobre um dataset com **~2 milhões de registros** de tráfego de rede, contendo ataques **DDoS, DoS Hulk, PortScan** e tráfego **BENIGN**.
+col_texto, col_video = st.columns([3, 2])
 
-Foram aplicadas técnicas de redução de dimensionalidade (**PCA** e **LDA**) para avaliar o desempenho dos modelos com diferentes quantidades de atributos.
+with col_texto:
+    st.markdown("""
+    **Aplicação de algoritmos de Machine Learning para detecção de ataques cibernéticos em tráfego de rede**
 
-Na seção **Ataques Desconhecidos**, são apresentados os resultados da aplicação dos mesmos modelos treinados sobre **ataques nunca vistos** (Heartbleed e Infiltration), simulando um cenário de **zero-day attack**.
-""")
+    Este dashboard apresenta os resultados da comparação entre **4 algoritmos** aplicados sobre um dataset com **~2 milhões de registros** de tráfego de rede, contendo ataques **DDoS, DoS Hulk, PortScan** e tráfego **BENIGN**.
+
+    Foram aplicadas técnicas de redução de dimensionalidade (**PCA** e **LDA**) para avaliar o desempenho dos modelos com diferentes quantidades de atributos.
+
+    Na seção **Ataques Desconhecidos**, são apresentados os resultados da aplicação dos mesmos modelos treinados sobre **ataques nunca vistos** (Heartbleed e Infiltration), simulando um cenário de **zero-day attack**.
+    """)
+
+with col_video:
+    st.markdown("##### Usando o sistema, veja!")
+    video_path = os.path.join(BASE, "videos", "apresentacao_streamlit.mp4")
+    if os.path.exists(video_path):
+        st.video(video_path)
+    else:
+        st.info("Vídeo não encontrado. Coloque o arquivo em `videos/apresentacao_streamlit.mp4`")
 
 st.divider()
 
