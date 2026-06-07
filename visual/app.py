@@ -347,7 +347,7 @@ def plot_zero_day_matrizes_confusao(df):
 
 st.title("🛡️ Detecção de Ataques Cibernéticos em Tráfego de Rede")
 
-col_texto, col_video = st.columns([3, 2])
+col_texto, col_video = st.columns([3, 4])
 
 with col_texto:
     st.markdown("""
@@ -361,21 +361,19 @@ with col_texto:
     """)
 
 with col_video:
-    col_vid1, col_vid2 = st.columns(2)
-    with col_vid1:
-        st.markdown("##### Usando o sistema, veja!")
-        video_path = os.path.join(BASE, "videos", "apresentacao_streamlit.mp4")
-        if os.path.exists(video_path):
-            st.video(video_path)
-        else:
-            st.info("Vídeo não encontrado. Coloque o arquivo em `videos/apresentacao_streamlit.mp4`")
-    with col_vid2:
-        st.markdown("##### Video do codigo do projeto")
-        video_path2 = os.path.join(BASE, "videos", "video_codigo.mp4")
-        if os.path.exists(video_path2):
-            st.video(video_path2)
-        else:
-            st.info("Vídeo não encontrado. Coloque o arquivo em `videos/video_codigo.mp4`")
+    st.markdown("##### Usando o sistema, veja!")
+    video_path = os.path.join(BASE, "videos", "apresentacao_streamlit.mp4")
+    if os.path.exists(video_path):
+        st.video(video_path)
+    else:
+        st.info("Vídeo não encontrado. Coloque o arquivo em `videos/apresentacao_streamlit.mp4`")
+
+    st.markdown("##### Video do codigo do projeto")
+    video_path2 = os.path.join(BASE, "videos", "video_codigo.mp4")
+    if os.path.exists(video_path2):
+        st.video(video_path2)
+    else:
+        st.info("Vídeo não encontrado. Coloque o arquivo em `videos/video_codigo.mp4`")
 
 st.divider()
 
