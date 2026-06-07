@@ -347,7 +347,7 @@ def plot_zero_day_matrizes_confusao(df):
 
 st.title("🛡️ Detecção de Ataques Cibernéticos em Tráfego de Rede")
 
-col_texto, col_video = st.columns([3, 4])
+col_texto, col_video = st.columns([3, 3])
 
 with col_texto:
     st.markdown("""
