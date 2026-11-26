@@ -30,6 +30,10 @@ visual/
 └── app.py                       # Dashboard Streamlit
 ```
 
+## Dados não processados
+Os arquivos CSV do dataset CICIDS2017 não estão presentes nesse repositório pois seu tamanho é grande demais. Para executar o pipeline completo, baixe a versão MachineLearningCSV na página oficial do CICIDS2017, da University of New Brunswick (https://www.unb.ca/cic/datasets/ids-2017.html), extraia os arquivos e coloque os oito CSVs na pasta: .../dados/dados_nao_processados/
+Se a pasta não existir, crie-a antes de adicionar os arquivos. Após isso, execute os notebooks na ordem indicada neste README.
+
 ## Como Executar
 
 ### 1. Instalar dependências
